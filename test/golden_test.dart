@@ -31,7 +31,77 @@ void main() {
           KyrgyzstanThemes.private,
           '0 1 1 2 3 A B C',
         ),
+        'government': (
+          KyrgyzstanPlates.government,
+          KyrgyzstanThemes.private,
+          '0 2 0 1 2 P T',
+        ),
         'eco': (KyrgyzstanPlates.eco, KyrgyzstanThemes.eco, '0 1 9 2 3 A R X'),
+        'president': (
+          KyrgyzstanPlates.president,
+          KyrgyzstanThemes.private,
+          '0 1',
+        ),
+        'foreign_h': (
+          KyrgyzstanPlates.foreign,
+          KyrgyzstanThemes.foreign,
+          '0 1 1 2 3 4 H',
+        ),
+        'diplomatic': (
+          KyrgyzstanPlates.diplomatic,
+          KyrgyzstanThemes.diplomatic,
+          'D 0 1 0 0 1 0 5 1 6',
+        ),
+        'consular': (
+          KyrgyzstanPlates.diplomatic,
+          KyrgyzstanThemes.diplomatic,
+          'C 0 1 0 0 1 0 5 1 6',
+        ),
+        'technical': (
+          KyrgyzstanPlates.diplomatic,
+          KyrgyzstanThemes.diplomatic,
+          'T 0 1 0 0 1 0 5 1 6',
+        ),
+        'diplomatic_un': (
+          KyrgyzstanPlates.diplomatic,
+          KyrgyzstanThemes.unitedNations,
+          'D 0 1 0 0 1 0 5 1 6',
+        ),
+        'technical_un': (
+          KyrgyzstanPlates.diplomatic,
+          KyrgyzstanThemes.unitedNations,
+          'T 0 1 0 0 1 0 5 1 6',
+        ),
+        'honorary': (
+          KyrgyzstanPlates.honorary,
+          KyrgyzstanThemes.diplomatic,
+          'H C 1 0 0 1 0 5 1 6',
+        ),
+        'mission': (
+          KyrgyzstanPlates.mission,
+          KyrgyzstanThemes.diplomatic,
+          'C M D 0 0 1',
+        ),
+        'mission_un': (
+          KyrgyzstanPlates.mission,
+          KyrgyzstanThemes.unitedNations,
+          'C M D 0 0 1',
+        ),
+        'square': (
+          KyrgyzstanPlates.square,
+          KyrgyzstanThemes.square,
+          '0 1 1 2 3 A B C',
+        ),
+        'square_government': (
+          KyrgyzstanPlates.squareGovernment,
+          KyrgyzstanThemes.square,
+          '0 2 0 1 2 P T',
+        ),
+        'motorcycle': (
+          KyrgyzstanPlates.motorcycle,
+          KyrgyzstanThemes.motorcycle,
+          '0 1 1 2 3 D Q',
+        ),
       };
 
   for (final MapEntry<String, (PlateSpec, PlateTheme, String)> c
@@ -61,6 +131,10 @@ void main() {
             ),
           ),
         ),
+      );
+      // The flag decal decodes off the test clock; let it land before the shot.
+      await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 200)),
       );
       await tester.pumpAndSettle();
       await expectLater(

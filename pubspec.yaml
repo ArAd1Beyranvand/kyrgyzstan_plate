@@ -1,5 +1,5 @@
 name: kyrgyzstan_plate
-description: "Kyrgyzstan's licence plates for the plate_core library — the 2015 01 123ABC plate in black on white and its green-striped electric variant, with an advisory validator."
+description: "Kyrgyzstan's licence plates for the plate_core library — the 2015 01 123ABC plates in black on white, black on yellow for foreign vehicles and white on red or blue for diplomatic ones, with advisory validators."
 version: 0.1.0
 publish_to: none
 resolution: workspace
@@ -18,3 +18,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+
+flutter:
+  assets:
+    - assets/icons/kyrgyzstan_flag.svg
+    - assets/icons/kyrgyzstan_flag.png

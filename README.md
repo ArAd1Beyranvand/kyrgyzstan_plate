@@ -10,7 +10,7 @@ https://platexample.ir/#/discover/kyrgyzstan
 
 # kyrgyzstan_plate
 
-Kyrgyzstan's licence plates for [`plate_core`](https://pub.dev/packages/plate_core) — the 2015 `01 123ABC` plate in black on white and its green-striped electric variant, with an advisory validator.
+Kyrgyzstan's licence plates for [`plate_core`](https://pub.dev/packages/plate_core) — the 2015 `01 123ABC` plates in black on white (private, government, electric, president, square and motorcycle), black on yellow for foreign vehicles, and white on red or blue for diplomatic ones, with advisory validators.
 
 ```dart
 import 'package:plate_core/plate_core.dart';
@@ -49,7 +49,6 @@ PlateCanvas(
 - [`niger_plate`](https://pub.dev/packages/niger-plate) - Niger's licence plates.
 - [`palestine_plate`](https://pub.dev/packages/palestine-plate) - Palestine's licence plates.
 - [`republic_of_ireland_plate`](https://pub.dev/packages/republic-of-ireland-plate) - Republic of Ireland's licence plates.
-- [`saudi_arabia_plate`](https://pub.dev/packages/saudi-arabia-plate) - Saudi Arabia's licence plates.
 - [`slovenia_plate`](https://pub.dev/packages/slovenia-plate) - Slovenia's licence plates.
 - [`spain_plate`](https://pub.dev/packages/spain-plate) - Spain's licence plates.
 - [`sudan_plate`](https://pub.dev/packages/sudan-plate) - Sudan's licence plates.

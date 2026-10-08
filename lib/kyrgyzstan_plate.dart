@@ -1,6 +1,6 @@
 /// Kyrgyzstan's licence plates for the `plate_core` library.
 ///
-/// the 2015 `01 123ABC` plate in black on white and its green-striped electric variant, with an advisory validator.
+/// The 2015 `01 123ABC` plates in each category the article shows, with advisory validators.
 library;
 
 export 'src/kyrgyzstan_colors.dart';
